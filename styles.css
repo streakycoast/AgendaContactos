@@ -57,3 +57,60 @@ body{
     cursor: pointer;
     transition: 1s;
 }
+
+.menu{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height:20vh;
+    margin: 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+.container__nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 0;
+    color: white;
+    border: var(--color-principal) solid;
+    font-size: 50px;
+    width: 100%;
+    
+}
+
+.container__nav div{
+    background-color: var(--background-color);
+    padding: 0;
+    color: white;
+    border: var(--color-principal) solid;
+    font-size: 50px;
+    width: 33%;
+    height: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn__agregar:hover{
+color: var(--color-secundario);
+cursor: pointer;
+transition: 1s;
+}
+
+.btn__editar:hover{
+    color: var(--color-secundario);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn__eliminar:hover{
+    color: var(--color-secundario);
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+
+
