@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Agenda de contactos</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container" >
         <header class="container__header">
             <h1 class="header__h1">
                 Agenda de contactos
@@ -21,23 +22,27 @@
                 ¡Bienvenido!
             </h2>
         </main>
+        
+  
+    </div>
+    <nav class="container__nav">
+        <div class="btn__agregar" id="agregar">
+            <i class="fas fa-user-plus"></i>
+        </div>
+        <div class="btn__editar" id="editar" >
+            <i class="fas fa-edit"></i>
+        </div>
+        <div class="btn__eliminar">
+            <i class="fas fa-user-minus"  id="eliminar"></i>
+        </div>
+    </nav>
         <!--MENU PRINCIPAL-->
 
-        <nav class="container__nav">
-            <div class="btn__agregar">
-                <i class="fas fa-user-plus"></i>
-            </div>
-            <div class="btn__editar">
-                <i class="fas fa-edit"></i>
-            </div>
-            <div class="btn__eliminar">
-                <i class="fas fa-user-minus"></i>
-            </div>
-        </nav>
-    </div>
+       
 
 
     <script src="https://kit.fontawesome.com/9c48c097e4.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2d3224d6ea.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d3224d6ea.js" crossorigin="anonymous"></script>    
+    <script src="main.js"></script>
 </body>
 </html>
