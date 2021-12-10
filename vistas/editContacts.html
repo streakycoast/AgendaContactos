@@ -1,31 +1,41 @@
 <style>
+    .h1-titulo{
+        text-align: center;
+    }
     .contenido{
-        background-color: #EEEEEE;
+        background-color: #FFB826;
         height: 80vh;
+        overflow-y: scroll;
     }
     .card-contact{
         display: grid;
         grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
     }
     .card-tittle{
-        background:rgb(99, 99, 218) ;
+        background:rgb(255, 255, 255) ;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        font-size: 34px;
+        font-size: 28px;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
     }
     .contact{
-        font-size: 24px;
+        font-size: 20px;
     }
     .details{
         background: white;
         display: grid;
+        border-radius: 20px;
+        margin: 10px 0;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "detalles detalles "
-                            "icono-tel telefono"
-                            "icono-email email";
+        grid-template-areas: "detalles detalles ";
     }
     .details-contacts{
         grid-area: detalles;
@@ -35,23 +45,26 @@
         padding: 20px;
         padding-bottom: 0;
         border-bottom: 2px solid rgb(99, 99, 218) ;
+        font-size: 18px;
     }
-    .icono-tel{
-        grid-area: icono-tel;
+    .contenido-contacto{
+        display: flex;
+        flex-direction: column;
     }
-    .telefono{
-        grid-area: telefono;
+    .item{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
     }
-    .icono-email{
-        grid-area: icono-email;
-    }
-    .email{
-        grid-area: email;
+    .icono{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
     }
 </style>
     
     <div class="contenido">
-        <h1>Contactos</h1>
+        <h1 class="h1-titulo">Contactos</h1>
         
         <section class="card-contact">
             <div class="card-tittle">
@@ -62,10 +75,38 @@
                 <h2 class="details-contacts">
                     Detalles del contacto
                 </h2>
-                <i class="fas fa-phone-square-alt icono-tel"></i>
-                <p class="telefono">8715741717</p>
-                <i class="fas fa-envelope icono-email"></i>
-                <p class="email">Franckgta3@gmail.com</p>
+                <div class="contenido-contacto">
+                    <div class="item">
+                        <i class="fas fa-phone-square-alt icono"></i>
+                        <p class="telefono">8715741717</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope icono"></i>
+                        <p class="email">Franckgta3@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-contact">
+            <div class="card-tittle">
+                <h1 class="contact">Christian de Jesus Chiquito Moreno</h1>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="details">
+                <h2 class="details-contacts">
+                    Detalles del contacto
+                </h2>
+                <div class="contenido-contacto">
+                    <div class="item">
+                        <i class="fas fa-phone-square-alt icono"></i>
+                        <p class="telefono"> 8711232771</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope icono"></i>
+                        <p class="email">StreakyCoast@gmail.com</p>
+                    </div>
+                </div>
             </div>
         </section>
             
