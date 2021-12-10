@@ -1,12 +1,12 @@
 //cambiar contenido dinamicamente con jquery
 $(document).ready(function(){
     $('#agregar').click(function(){
-        $('#container').load("addContacts.html")
+        $('#container').load("vistas/addContacts.html")
     })
     $('#editar').click(function(){
-        $('#container').load("editContacts.html")
+        $('#container').load("vistas/editContacts.html")
     })
     $('#eliminar').click(function(){
-        $('#container').load("deleteContact.html")
+        $('#container').load("vistas/deleteContact.html")
     })
 })
