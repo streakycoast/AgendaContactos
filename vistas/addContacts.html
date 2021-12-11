@@ -60,7 +60,7 @@ input{
   transition: 0.5s;
 }
 .btn__add{
-  background-color: rgb(99, 99, 218) ;
+  background-color: #000000;
   color: white;
   text-align: center;
   font-family: sans-serif;
@@ -81,10 +81,13 @@ input{
   <form action="" class="form__add">
   <h1 class="form__titulo">Agregar nuevo contacto</h1>
   <div class="container__imputs">
-    <input type="text" name="" placeholder="Ingrese un nombre"class="input__100">
-    <input type="text" name="" placeholder="Ingrese un apellido" class="input__100">
-    <input type="text" name="" placeholder="Ingrese numero celular" class="input__100">
-    <input type="email" name="" placeholder="Ingrese E-mail" class="input__100">
-    <input type="button" value="Registrar" class="btn__add"> 
+    <input type="text" name="" placeholder="Ingrese un nombre"class="input__100" id="nombre">
+    <input type="text" name="" placeholder="Ingrese un apellido" class="input__100" id="apellido">
+    <input type="text" name="" placeholder="Ingrese numero celular" class="input__100" id="phone">
+    <input type="email" name="" placeholder="Ingrese E-mail" class="input__100" id="email">
+    <input type="button" value="Registrar" class="btn__add" id="btn-add"> 
   </div>
   </form>
+
+  <script src="../logica.js">
+  </script>
