@@ -1,82 +1,70 @@
 <style>
-.contenido{
-    position: relative;
-    height: 80vh;
-    margin: 0;
-    width: 100%;
-  font-family: sans-serif;
+*{
+  box-sizing: border-box;
 }
-.formulario {
-  width: 90%;
-  max-width: 100%;
-  margin: auto;
-  margin-top: 0px;
-  padding: 19px;
-  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
-  position: relative;
-  height: 80vh;
+.form__add{
+height: 80vh;
+width: 100%;
+max-width: 100%;
+margin: auto;
+background-color: white;
+border-radius: 7px;
 }
-.formulario__titulo {
-  text-align: center;
-  margin-top: 0;
-  color: rgba(0,0,0,0.7);
-}
-.formulario__input, .formulario__label, .formulario__submit {
-  display: block;
-  width: 90%;
-  font-size: 1.3em;
-}
-.formulario__input {
-    margin-top: 40px;
-  padding: 20px;
-  height: 3%;
-  width: 85%;
-  background: rgba(0,0,0,0.1);
-  border: 1px solid rgba(0,0,0,0.3);
-  margin-bottom: 40px;
-  margin-left: 1.5%;
-}
-.formulario__input:focus {
-  outline: 1px solid rgba(0,0,0,0.7);
-}
-.formulario__input:focus + .formulario__label{
-  margin-top: -130px;
-}
-.formulario__label {
-  padding-left: 15px;
-  position: absolute;
-  margin-top: -85px;
-  z-index: -20;
-  color: rgba(0,0,0,0.5);
-  transition: all 0.2s;
-}
-.formulario__submit {
-  margin-left: 5%;
-  background: rgba(0,0,0,0.7);
+.form__titulo{
+  background-color: skyblue;
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.container__inputs{
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+input{
+  margin-top: 2%;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 20px;
+  margin-left: 10%;
+
+}
+.input__100{
+  width: 80%;
+  border:none;
+  border-bottom:1px solid #757575;
+  outline: 0;
+box-sizing: border-box;
+}
+.input__100:hover{
+  border-bottom:2px solid #bd7d7d;
+  transition: 0.5s;
+}
+.btn__add{
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
   cursor: pointer;
-  border: none;
+  padding: 10px 40px;
 }
 </style>
     
-    <div class="contenido">
-        <form action="" class="formulario">
-            <h1 class="formulario__titulo">Crear Contacto</h1>
 
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Nombres:</label>
-
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Apellidos:</label>
-
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Teléfono:</label>
-
-            <input type="email" class="formulario__input">
-            <label for="" class="formulario__label">Correo:</label>
-
-            <input type="button" class="formulario__submit" value="Agregar Contacto">
-          </form>
-            
-    </div>
+  
+  <form action="" class="form__add">
+  <h2 class="form__titulo">Agregar nuevo contacto</h2>
+  <div class="container__imputs">
+    <input type="text" name="" placeholder="Ingrese un nombre" class="input__100">
+    <input type="text" name="" placeholder="Ingrese un apellido" class="input__100">
+    <input type="text" name="" placeholder="Ingrese numero de telefono" class="input__100">
+    <input type="text" name="" placeholder="Ingrese numero celular" class="input__100">
+    <input type="email" name="" placeholder="Ingrese E-mail" class="input__100">
+    <input type="button" value="Registrar" class="btn__add"> 
+  </div>
+  </form>
