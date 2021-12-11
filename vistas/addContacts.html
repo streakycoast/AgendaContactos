@@ -7,17 +7,19 @@ height: 80vh;
 width: 100%;
 max-width: 100%;
 margin: auto;
-background-color: white;
-border-radius: 7px;
+background-color: #FFB826;
+font-family: 'Readex Pro', sans-serif;
 }
 .form__titulo{
-  background-color: skyblue;
-  color: white;
+  background-color: #FFB826;
+  color: black;
   padding: 20px;
   text-align: center;
   font-weight: 100;
   font-size: 30px;
   margin-top: 0px;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: bold;
 }
 .container__inputs{
   padding: 10px 30px;
@@ -37,30 +39,40 @@ input{
 .input__100{
   width: 80%;
   border:none;
-  border-bottom:1px solid #757575;
+  border-bottom: 2px solid rgb(99, 99, 218) ;
   outline: 0;
-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 4px;
 }
 .input__100:hover{
-  border-bottom:2px solid #bd7d7d;
+  border-bottom: 3px solid rgb(88, 88, 194) ;
+  transform: scale(1.1); 
   transition: 0.5s;
 }
 .btn__add{
-  background-color: crimson;
+  background-color: rgb(99, 99, 218) ;
   color: white;
   text-align: center;
   font-family: sans-serif;
   cursor: pointer;
   padding: 10px 40px;
+  border-radius: 10px;
+  border:none;
+}
+.btn__add:hover{
+  background-color: rgb(88, 88, 194) ;
+  transition: 0.2s;
+  transform: scale(1.2); 
 }
 </style>
     
 
   
   <form action="" class="form__add">
-  <h2 class="form__titulo">Agregar nuevo contacto</h2>
+  <h1 class="form__titulo">Agregar nuevo contacto</h1>
   <div class="container__imputs">
-    <input type="text" name="" placeholder="Ingrese un nombre" class="input__100">
+    <input type="text" name="" placeholder="Ingrese un nombre"class="input__100">
     <input type="text" name="" placeholder="Ingrese un apellido" class="input__100">
     <input type="text" name="" placeholder="Ingrese numero de telefono" class="input__100">
     <input type="text" name="" placeholder="Ingrese numero celular" class="input__100">
