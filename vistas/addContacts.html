@@ -1,3 +1,4 @@
+<!--Estilos de formulario-->
 <style>
   *{
     box-sizing: border-box;
@@ -38,7 +39,7 @@ font-family: 'Readex Pro', sans-serif;
 
 }
 input{
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 15px;
   padding: 15px;
   font-size: 20px;
@@ -48,13 +49,12 @@ input{
 .input__100{
   width: 80%;
   border:none;
-  border-bottom: 2px solid rgb(99, 99, 218) ;
   outline: 0;
   box-sizing: border-box;
   background: white;
-  border-radius: 4px;
+  border-radius: 10px;
 }
-.input__100:hover{
+.input__100:focus{
   border-bottom: 3px solid rgb(88, 88, 194) ;
   transform: scale(1.1); 
   transition: 0.5s;
@@ -74,20 +74,157 @@ input{
   transition: 0.2s;
   transform: scale(1.2); 
 }
+.label__input{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10%;
+  padding: 0;
+}
 </style>
     
 
   
-  <form action="" class="form__add">
-  <h1 class="form__titulo">Agregar nuevo contacto</h1>
-  <div class="container__imputs">
-    <input type="text" name="" placeholder="Ingrese un nombre"class="input__100" id="nombre">
-    <input type="text" name="" placeholder="Ingrese un apellido" class="input__100" id="apellido">
-    <input type="text" name="" placeholder="Ingrese numero celular" class="input__100" id="phone">
-    <input type="email" name="" placeholder="Ingrese E-mail" class="input__100" id="email">
-    <input type="button" value="Registrar" class="btn__add" id="btn-add"> 
-  </div>
-  </form>
+  
+<!--Estilos de agenda-->
+  <style>
+    .h1-titulo{
+        margin-top: 0;
+        text-align: center;
+    }
+    .contenido{
+        background-color: #FFB826;
+        height: 80vh;
+    }
+    .card-contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    .card-tittle{
+        background:rgb(255, 255, 255) ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 28px;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .contact{
+        font-size: 20px;
+    }
+    .details{
+        background: white;
+        display: grid;
+        border-radius: 20px;
+        margin: 10px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "detalles detalles ";
+    }
+    .details-contacts{
+        grid-area: detalles;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 0;
+        border-bottom: 2px solid rgb(99, 99, 218) ;
+        font-size: 18px;
+    }
+    .contenido-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .icono{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+    }
+</style>
+    
+    <div class="contenido">
+      <form action="" class="form__add">
+        <h1 class="form__titulo">Agregar nuevo contacto</h1>
+        <div class="container__imputs">
+          <label for="" class="label__input">Nombre:</label>
+          <input type="text" name="" placeholder="Ingrese un nombre"class="input__100" id="nombre">
+          <br>
+          <br>
+          <label for="" class="label__input">Apellido:</label>
+          <input type="text" name="" placeholder="Ingrese un apellido" class="input__100" id="apellido">
+          <br>
+          <br>
+          <label for="" class="label__input">Telefono:</label>
+          <input type="text" name="" placeholder="Ingrese numero celular" class="input__100" id="phone">
+          <br>
+          <br>
+          <label for="" class="label__input">Correo:</label>
+          <input type="email" name="" placeholder="Ingrese E-mail" class="input__100" id="email">
+          <br>
+          <br>
+          <input type="button" value="Registrar" class="btn__add" id="btn-add"> 
+        </div>
+        </form>
+
+        <h1 class="h1-titulo">Contactos</h1>
+        
+        <section class="card-contact">
+            <div class="card-tittle">
+                <h1 class="contact">Francisco Carranza</h1>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="details">
+                <h2 class="details-contacts">
+                    Detalles del contacto
+                </h2>
+                <div class="contenido-contacto">
+                    <div class="item">
+                        <i class="fas fa-phone-square-alt icono"></i>
+                        <p class="telefono">8715741717</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope icono"></i>
+                        <p class="email">Franckgta3@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-contact">
+            <div class="card-tittle">
+                <h1 class="contact">Christian de Jesus Chiquito Moreno</h1>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="details">
+                <h2 class="details-contacts">
+                    Detalles del contacto
+                </h2>
+                <div class="contenido-contacto">
+                    <div class="item">
+                        <i class="fas fa-phone-square-alt icono"></i>
+                        <p class="telefono"> 8711232771</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope icono"></i>
+                        <p class="email">StreakyCoast@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            
+    </div>
 
   <script src="../logica.js">
   </script>
