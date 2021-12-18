@@ -9,34 +9,62 @@
     <title>Agenda de contactos</title>
 </head>
 <body>
-    <div class="container" id="container" >
-        <header class="container__header">
-            <h1 class="header__h1">
-                Agenda de contactos
-            </h1>
-        </header>
-        <!--SECCION PRINCIPAL-->
-        <main class="container__main">
-            <img src="images/01.png" alt="" class="main__img">
-            <h2 class="main__h2">
-                ¡Bienvenido!
-            </h2>
-        </main>
-        
+    <div class="contenido">
+        <div class="row">
+            <form action="" class="form__add">
+                <h1 class="form__titulo">Agregar nuevo contacto</h1>
+                <div class="container__imputs">
+                  <label for="" class="label__input">Nombre:</label>
+                  <input type="text" name="" placeholder="Ingrese un nombre"class="input__100" id="nombre">
+                  <br>
+                  <br>
+                  <label for="" class="label__input">Apellido:</label>
+                  <input type="text" name="" placeholder="Ingrese un apellido" class="input__100" id="apellido">
+                  <br>
+                  <br>
+                  <label for="" class="label__input">Telefono:</label>
+                  <input type="text" name="" placeholder="Ingrese numero celular" class="input__100" id="phone">
+                  <br>
+                  <br>
+                  <label for="" class="label__input">Correo:</label>
+                  <input type="email" name="" placeholder="Ingrese E-mail" class="input__100" id="email">
+                  <br>
+                  <br>
+                  <input type="button" value="Registrar" class="btn__add" id="btn-add"> 
+                </div>
+                </form>
+        </div>
   
-    </div>
-    <nav class="container__nav">
-        <div class="btn__agregar" id="agregar">
-            <i class="fas fa-user-plus"></i>
-        </div>
-        <div class="btn__editar" id="editar" >
-            <i class="fas fa-address-book"></i>
-        </div>
-        <div class="btn__eliminar">
-            <i class="fas fa-user-minus"  id="eliminar"></i>
-        </div>
-    </nav>
-        <!--MENU PRINCIPAL-->
+          <div class="row">
+            <h1 class="h1-titulo">Contactos</h1>
+          
+            <section class="card-contact">
+                <div class="card-tittle">
+                    <h1 class="contact">Francisco Carranza</h1>
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="details">
+                    <h2 class="details-contacts">
+                        Detalles del contacto
+                    </h2>
+                    <div class="contenido-contacto">
+                        <div class="item">
+                            <i class="fas fa-phone-square-alt icono"></i>
+                            <p class="telefono">8715741717</p>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-envelope icono"></i>
+                            <p class="email">Franckgta3@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+         
+          </div>
+          
+              
+      </div>
 
        
 
