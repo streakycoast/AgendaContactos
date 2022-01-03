@@ -29,11 +29,38 @@ const guardarForm =(e)=>{
    
     let contactos= (idAleatorio, JSON.parse(stringAJson)); //convertir ese elemento a json
     
-    console.log(contactos)
+    //console.log(contactos)
 
     
       function mostrarDatos(){
-          console.log("mostrando datos" ,contactos)
+          //console.log("mostrando datos" ,contactos)
+          let tbody=document.getElementById('tbody');
+          let td=document.getElementById('td')
+          
+          let contactoss=Object.keys(localStorage);
+          //console.log(contactoss)
+            let parentNode= document.getElementById('contenedorContactos'); 
+          for (let contacto of contactoss) {
+            let contact= JSON.parse(localStorage.getItem(contacto))
+            
+            //creando elementos HTML
+            let divContacto=document.createElement('div')
+            let nombreyApellidoContacto=document.createElement('h3')
+            let telefonoContacto=document.createElement('p')
+            let correoContacto=document.createElement('p')
+
+            nombreyApellidoContacto.innerHTML=contact.nombre + " "+ contact.apellido
+            telefonoContacto.innerHTML=contact.telefono
+            correoContacto.innerHTML=contact.correo
+
+            divContacto.appendChild(nombreyApellidoContacto)
+            divContacto.appendChild(telefonoContacto)
+            divContacto.appendChild(correoContacto)
+
+            parentNode.appendChild(divContacto)
+
+             
+        }
       }
 
       
@@ -47,7 +74,7 @@ const guardarForm =(e)=>{
 
 
 
-const botonMostrar=document.getElementById('btn-mostrar');
+
     
 botonAdd.addEventListener('click', guardarForm)
 
